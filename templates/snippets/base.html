@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon Website</title>
+    <header> Halo guys</header>
+</head>
+<body>
+    {% block content %}
+    <h1>THIS IS SHOW MY STATIC WORKS</h1>
+    <img src="{%static 'img/cloud.jpg' %}" alt="logo" width="600" height="400">
+
+    <h2>this several API that u need to check!!</h2>
+    <ul>
+        <li>menu-items/</li>
+        <li>booking/</li>
+    </ul>
+    {%endblock content%}
+    
+    {% block form %}
+    
+    {%endblock form%}
+    
+    
+    {% block script %}
+    
+    {%endblock script%}
+    
+</body>
+</html>
