@@ -1,0 +1,29 @@
+{% extends 'snippets/base.html' %}
+{% load static %}
+
+{% block style%}
+<style>
+    .profile-img {
+        width: 150px;
+        /* Ukuran foto */
+        height: 150px;
+        border-radius: 50%;
+        /* Membuat gambar bulat */
+        object-fit: cover;
+        /* Menyesuaikan ukuran gambar dengan baik */
+    }
+</style>
+{% endblock style%}
+
+{% block content%}
+<div class="container text-center mt-5">
+
+    <img src="{% static 'img/ikhsan.jpg' %}" alt="Profile Picture" class="profile-img mb-3">
+
+
+    <h2>Halo, saya Ikhsan Maulana Akbar</h2>
+    <p>Saya seorang pengembang web yang berfokus pada Full Stack Development dan baru saja mengubah karier saya dari
+        Teknik Industri ke Pemrograman. Saya memiliki pengalaman dalam Python, JavaScript, HTML, dan CSS. Saya senang
+        belajar hal baru dan bekerja dengan tim yang kreatif.</p>
+</div>
+{% endblock content%}

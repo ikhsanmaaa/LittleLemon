@@ -17,7 +17,9 @@ class Category (models.Model):
 
 class MenuItem(models.Model):
     title = models.CharField(max_length=255, db_index=True)
+    description = models.CharField(max_length=255, null=True)
     price = models.DecimalField(max_digits=6, decimal_places=2, db_index=True)
+    image = models.CharField(max_length=255, null=True)
     featured = models.BooleanField()
     category = models.ForeignKey (Category, on_delete=models.PROTECT)
 
